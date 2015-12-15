@@ -13,7 +13,8 @@ Verdeutlichen kann man das mit dem folgenden Code-Beispiel:
       /**
        * erstellt aus der Position und dem globalenSeed einen lokalen Seed
        **/
-	  var pseudoRandom = new Chance(globalSeed + position), scene = {};
+	  var pseudoRandom = new Chance(globalSeed + position), 
+	  scene = {};
 	  /**
 	   * gibt true zurück wenn nächste Zufallszahl ist gerade  
 	   **/
@@ -34,5 +35,17 @@ Es gibt verschiedene Biome:
 -	Schneelandschaft (Minusgrade)
 	
 
+
+    var globalSeed = 12684842;
+    var bioms = ['Meer', 'Wüste', 'Wiese', 'Sumpf', 'Schneelandschaft'];
+    
+    function generateScene(position){
+	  var pseudoRandom = new Chance(globalSeed + position), 
+	  scene = {},
+	  biomIndex = pseudoRandom.next()%4;
+	  scene.biom = bioms[biomIndex];
+    }
+    
 Würde man die Auswahl des Biomes dem Pseudozufall überlassen, hätte man am Ende sehr unnatürliche Biom-Kombinationen, eine Wüste könnte direkt an eine Schneelandschaft grenzen, die wiederum an eine weiter Wüste und diese an einen Sumpf. In der Realität undenkbar.
 Der Pseudozufall muss also durch ein System ersetzt werden, welches das Klima annähernd natürlich simuliert.
+
