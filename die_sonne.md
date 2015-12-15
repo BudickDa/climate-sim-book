@@ -13,6 +13,6 @@ Dadurch, dass die Sonnenstrahlen schief auftreffen, wird die Energie aus $$1m^2$
 
 Im vorliegenden Beispiel beträgt der Winkel der Sonne am Horizont (Höhenwinkel β) 30°.
 Mit Hilfe des Sinus kann man die Strahlung pro Quadratmeter am Boden berechnen:
-$$ E_{Boden} = E_0 * \sin(β)$$
-$$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30°)$$
-$$ E_{Boden} = 683.5\frac{W}{m^2}$$
+$$ E_{Boden} = E_0 * \sin(β)$$<br/>
+$$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30°)$$<br/>
+$$ E_{Boden} = 683.5\frac{W}{m^2}$$<br/>
