@@ -10,4 +10,5 @@
 * Funktionale Programmierung
 * Die Implementierung mit JavaScript
 * Das Ergebnis
+* Fazit
 
