@@ -6,7 +6,6 @@
 * Die Sonne
 * [Das System](komplexe_vernetzte_systeme.md)
 * Die Erde
-* Das Wirkungsnetz
 * Funktionale Programmierung
 * Die Implementierung mit JavaScript
 * Das Ergebnis
