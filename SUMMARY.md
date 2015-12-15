@@ -9,4 +9,5 @@
 * Das Wirkungsnetz
 * Funktionale Programmierung
 * Die Implementierung mit JavaScript
+* Das Ergebnis
 
