@@ -1,4 +1,15 @@
-My Awesome Book
+Simulation eines vereinfachten Klimasystems
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+#### Implementierung eines komplexen Systems mit Hilfe funktionaler Programmierung
+
+*Daniel Budick, B. Eng.<br/>
+Fakultät Informatik<br/>
+TH Nürnberg Georg Simon Ohm<br/>
+Nürnberg, Deutschland<br/>
+daniel@budick.eu*<br/>
+
+*Abstract:* Klima ist das Resultat verschiedener Faktoren die auf makro- und mikroskopischer Ebene verknüpft sind. Im Folgenden soll die Eignung von funktionaler Programmierung zu Implementierung solcher Systeme getestet werden.
+
+**Keywords:** Komplexe vernetzte Systeme, Klima, JavaScript, Funktionale Programmierung
+
