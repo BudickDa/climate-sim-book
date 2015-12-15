@@ -10,5 +10,5 @@
 * Die Implementierung mit JavaScript
 * Das Ergebnis
 * Fazit
-* Literaturverzeichnis
+* [Literaturverzeichnis](literaturverzeichnis.md)
 
