@@ -1,5 +1,5 @@
 # Summary
 
 * [Einleitung](README.md)
-* [Komplexe Systeme](chapter1.md)
+* [Die Idee](chapter1.md)
 
