@@ -7,4 +7,5 @@
 * Die Sonne
 * Die Erde
 * Das Wirkungsnetz
+* Funktionale Programmierung
 
