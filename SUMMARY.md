@@ -6,4 +6,5 @@
 * [Komplexe vernetzte Systeme](komplexe_vernetzte_systeme.md)
 * Die Sonne
 * Die Erde
+* Das Wirkungsnetz
 
