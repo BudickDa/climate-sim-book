@@ -1,3 +1,0 @@
-# Komplexe vernetzte Systeme
-
-
