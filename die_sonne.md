@@ -19,3 +19,36 @@ $$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30 ^\circ)$$<br/>
 $$ E_{Boden} = 683.5\frac{W}{m^2}$$<br/>
 
 
+## Ekliptik $$\epsilon$$ und die Jahreszeiten
+
+Der Höhenwinkel der Sonne ändert sich über das Jahr. Grund dafür ist, dass während die Erde ihre Bahn um die Sonne dreht sich der Ausrichtung der Erdachse gegenüber der Sonne ändert.
+
+![Die Ausrichtung der Erdachse zur Sonne ändert sich mit jeder Jahreszeit um 45 Grad](Jahreszeit.png)
+
+
+Man kann die Ekliptik mit einer Formel vom letzten Standardäquinoktium (J2000.0) berechnen: 
+
+$$\epsilon = 23.439° - 0.0000004° * n$$
+
+$$n$$ ist die Anzahl der Tage seit dem letzten Standardäquinoktium.
+
+In JavaScript kann man $$n$$ folgendermaßen berechnen:
+
+    function n(){
+      var san = 946728000,//Timestamp des Standardäquinoktikums: 946728000
+          secondsOfDay = 86400; //Tag in Sekunden: 60 * 60 *24 = 86400
+      return (new Date().getTime() - san) / secondsOfDay;
+    }
+
+Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrade $$\Phi$$.
+
+Zusammenfassen lässt sich diese Abhängigkeit mathematisch:
+
+$$\beta = arctan{\frac{cos(\epsilon)*sin(\Phi)}{cos(\Phi)}}$$
+
+Fasst man die bisherigen Erkentnisse zusammen erhält man die folgende Gleichung:
+
+$$E_{Boden} = 1367\frac{W}{m^2}*sin(arctan(\frac{cos((23.439^\circ-0.0000004^\circ)*\frac{t-946728000}{86400})*sin(\Phi)}{cos(\Phi)})$$
+
+Implementiert man die folgende Gleichung in JavaScript ist zu beachten, dass die Winkel in Radian konvertiert werden.
+
