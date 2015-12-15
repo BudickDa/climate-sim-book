@@ -2,7 +2,7 @@
 
 * [Einleitung](README.md)
 * [Die Idee](die_idee.md)
-* Die Sonne
+* [Die Sonne](die_sonne.md)
 * [Das System](komplexe_vernetzte_systeme.md)
 * Die Erde
 * Funktionale Programmierung
