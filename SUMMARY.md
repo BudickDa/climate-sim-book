@@ -8,4 +8,5 @@
 * Die Erde
 * Das Wirkungsnetz
 * Funktionale Programmierung
+* Die Implementierung mit JavaScript
 
