@@ -9,7 +9,7 @@ Die unterschiedlichen Klimazonen sowie das Wechsel der Jahreszeiten liegt an der
 Das Resultat der Ekliptik ist, dass die Sonnenstrahlen schief auf die Erde auftreffen, da vom Boden aus betrachtet die Sonne in Abhängigkeit von Breitengrad und Jahreszeit unterschiedlich hoch am Himmel steht.
 Dadurch, dass die Sonnenstrahlen schief auftreffen, wird die Energie aus $$1m^2$$ Sonnenstrahl auf eine größere Fläche am Boden verteilt. Je niedriger die Sonne am Horizon steht, desto geringer ist die Energie pro $$m^2$$.
 
-
+![Der Höhenwinkel β der Sonne beträgt in diesem Beispiel 30°.](Fläche.jpg)
 
 Im vorliegenden Beispiel beträgt der Winkel der Sonne am Horizont (Höhenwinkel β) 30°.
 Mit Hilfe des Sinus kann man die Strahlung pro Quadratmeter am Boden berechnen:
