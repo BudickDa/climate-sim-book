@@ -5,3 +5,14 @@ Die durchschnittlich wirkende Leistung in Form von Strahlung ist von der Entfern
 Die unterschiedlichen Klimazonen sowie das Wechsel der Jahreszeiten liegt an der Neigung der Äquatorebne zur Bahnebene des Orbits. Diese beträgt etwa 23.4 Grad. Man spricht hierbei von der Ekliptik.
 
 ![Ekiptik: Der Winkel zwischen Äquator und Orbitalebene](Ekliptik.jpg)
+
+Das Resultat der Ekliptik ist, dass die Sonnenstrahlen schief auf die Erde auftreffen, da vom Boden aus betrachtet die Sonne in Abhängigkeit von Breitengrad und Jahreszeit unterschiedlich hoch am Himmel steht.
+Dadurch, dass die Sonnenstrahlen schief auftreffen, wird die Energie aus $$1m^2$$ Sonnenstrahl auf eine größere Fläche am Boden verteilt. Je niedriger die Sonne am Horizon steht, desto geringer ist die Energie pro $$m^2$$.
+
+
+
+Im vorliegenden Beispiel beträgt der Winkel der Sonne am Horizont (Höhenwinkel β) 30°.
+Mit Hilfe des Sinus kann man die Strahlung pro Quadratmeter am Boden berechnen:
+$$ E_{Boden} = E_0 * \sin(β)$$
+$$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30°)$$
+$$ E_{Boden} = 683.5\frac{W}{m^2}$$
