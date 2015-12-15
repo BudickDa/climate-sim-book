@@ -28,7 +28,7 @@ Der Höhenwinkel der Sonne ändert sich über das Jahr. Grund dafür ist, dass w
 
 Man kann die Ekliptik mit einer Formel vom letzten Standardäquinoktium (J2000.0) berechnen: 
 
-$$\epsilon = 23.439° - 0.0000004^\circ * n$$
+$$\epsilon = 23.439^\circ - 0.0000004^\circ * n$$
 
 $$n$$ ist die Anzahl der Tage seit dem letzten Standardäquinoktium.
 
