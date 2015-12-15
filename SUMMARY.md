@@ -10,4 +10,5 @@
 * Die Implementierung mit JavaScript
 * Das Ergebnis
 * Fazit
+* Literaturverzeichnis
 
