@@ -46,9 +46,9 @@ Zusammenfassen lässt sich diese Abhängigkeit mathematisch:
 
 $$\beta = arctan{\frac{cos(\epsilon)*sin(\Phi)}{cos(\Phi)}}$$
 
-Fasst man die bisherigen Erkentnisse zusammen erhält man die folgende Gleichung:
+Fasst man die bisherigen Erkenntnisse zusammen erhält man die folgende Gleichung:
 
 $$E_{Boden} = 1367\frac{W}{m^2}*sin(arctan(\frac{cos((23.439^\circ-0.0000004^\circ)*\frac{t-946728000}{86400})*sin(\Phi)}{cos(\Phi)})$$
 
-Implementiert man die folgende Gleichung in JavaScript ist zu beachten, dass die Winkel in Radian konvertiert werden.
+Implementiert man die folgende Gleichung in JavaScript ist zu beachten, dass die Winkel in Radiant konvertiert werden.
 
