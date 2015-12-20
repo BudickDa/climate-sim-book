@@ -21,6 +21,8 @@ Die Level interagieren mit den Leveln der des anschließenden Bioms, sofern Wind
 
 
 
+
+
 ## Das Gesamtsystem
 Das Gesamtsystem hat mehrere Ebenen. In der obersten Ebene wird die Interaktion der Biome beschrieben. Zur Vereinfachung sind die Biome nur eindimensional angeordnet.
 Die eintreffende Strahlungsenergie der Sonne ist abhängig von Position und Zeit. Zur Vereinfachung wird angenommen, dass sich alle Biome auf demselben Breiten und Längengrad befinden.
