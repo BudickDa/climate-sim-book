@@ -16,8 +16,7 @@ Mit Hilfe des Sinus kann man die Strahlung pro Quadratmeter am Boden berechnen:
 
 $$ E_{Boden} = E_0 * \sin(\beta)$$<br/>
 $$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30 ^\circ)$$<br/>
-$$ E_{Boden} = 683.5\frac{W}{m^2}$$<br/>
-
+$$ E_{Boden} = 683.5\frac{W}{m^2}$$
 
 ## Ekliptik $$\epsilon$$ und die Jahreszeiten
 
@@ -44,12 +43,10 @@ $$h = \arcsin(\cos(\delta) * \cos(\tau) * \cos(\varphi) + \sin(\delta) * \sin(\v
 
 Wobei gilt:
 
-$$\delta $$: Die Deklination ist, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikale Länge der Sonne $$\lambda$$.
-
+$$\delta $$: Die Deklination ist, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikale Länge der Sonne $$\lambda$$.<br/>
 $$\delta  = \arcsin(\sin(\varepsilon) * \sin(\lambda)) $$
 
-wobei:
-
+wobei:<br/>
 $$\lambda = 280,460^\circ + 0,9856474^\circ * n + 1,915^\circ * \sin(357,528^\circ + 0,9856003^\circ \cdot n) + 0,01997^\circ * \sin(2 * 357,528^\circ + 0,9856003^\circ * n)$$
 
 $$\varphi$$ der Breitengrad ist.
