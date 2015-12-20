@@ -7,8 +7,23 @@ Im Folgenden soll das Klima aus systemtheoretischer Sicht betrachtet werden. Daz
 * **Gesamtsystem:** Das Gesamtsystem ist die Summe aller Subsysteme. In diesem Fall alle Biome.
 
 
+## Das Biom
+Ein Biom ist ein virtuelles Gebiet mit eine bestimmten Fläche. Jedes Biom wurde in drei Höhenlevel unterteilt: 
+- Level 1: Der Boden.
+- Level 2: Untere Atmosphäre (ca. 3000 m)
+- Level 3: Obere Atmosphäre (ca. 7000 m)
+
+Jedes Level hat eigene klimatische Bedingungen, die sich auf die unteren Level auswirken können:
+- Bewölkung: Dämpft das Sonnenlicht
+- Regen: Erhöht das Grundwasser am Boden
+
+Die Level interagieren mit den Leveln der des anschließenden Bioms, sofern Wind weht. Diese Interaktion findet immer auf gleicher Höhe statt: z. B. Level 1 => Level 1, Level 2 => Level 2 etc.
+
+
+## Das Gesamtsystem
+
 Das Gesamtsystem hat mehrere Ebenen. In der obersten Ebene wird die Interaktion der Biome beschrieben. Zur Vereinfachung sind die Biome nur eindimensional angeordnet.
-Die eintreffende Strahlungsenergie der Sonne ist abhängig von Breitengrad und Datum. Da die Biome von Westen nach Osten angeordnet sind, strahlt die Sonne auf alle Biome mit derselben Stärke.
+Die eintreffende Strahlungsenergie der Sonne ist abhängig von Position und Zeit. Zur Vereinfachung wird angenommen, dass sich alle Biome auf demselben Breiten und Längengrad befinden.
 
 Eine weitere Vereinfachung ist, dass die Interaktion der Biome nur von Westen nach Osten erfolgen kann (der Wind weht nur von Westen nach Osten).
 Das Resultierende System kann wie folgt abgebildet werden:
