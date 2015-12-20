@@ -4,8 +4,7 @@ Wenn man das vorliegende System in seine kleinsten Bestandteile zerlegt, kommt m
 
 Diese Funktionen werden der Reihe nach ausgeführt.
 
-mathematische Darstellung:
-
+mathematische Darstellung:<br/>
 $$ f_{gesamt}(x) = 9 * (x+5)$$<br/>
 kann unterteilt werden in zwei Funktionen:<br/>
 $$f_1(x) = x + 5$$<br/>
@@ -15,7 +14,6 @@ $$ f_{gesamt}(x) = f_2(f_1(x))$$
 
 Als System betrachtet:
 ![](gesamtsystem.PNG)
-
 Komplexe Systeme können auf diese Weise in einfachste Blöcke zerlegt und aneinandergereiht werden. Man könnte diesen Vorgang auch in JavaScript implementieren:
 
     function one(x){
@@ -69,15 +67,26 @@ Zum Vergleich, das Systembild sähe folgendermaßen aus:
 
 Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit anderen Subsystemen zu einem weiteren Subsystem zusammengefasst werden:
 
-    /* Das gesamte Biom wird berechnet. Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, werden die Daten entsprechend angepasst. Dann werden die Wolken ermittelt und ob es regnet. Beide Subsysteme aktualsieren Temperatur und Luftfeuchtigkeit. Anschließend wird anhand der Werte die Art des Bioms ermittelt (Wiese, Wald, Sumpf etc.) und ggf. geändert.
-    Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.*/
+    /* Das gesamte Biom wird berechnet. 
+    Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, 
+    werden die Daten entsprechend angepasst. 
+    Dann werden die Wolken ermittelt und ob es regnet. 
+    Beide Subsysteme aktualsieren Temperatur und Luftfeuchtigkeit. 
+    Anschließend wird anhand der Werte die Art des Bioms ermittelt 
+    (Wiese, Wald, Sumpf etc.) und ggf. geändert.
+    Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.
+    */
     
     var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind);
     
     
     /*
-    Um einen Stackoverf;ow zu vermeiden wird computeBiome als callback von setInterval aufgerufen. setInterval ruft eine Funktion immer auf, wartet aber mit den Aufruf bis eine festgelegte Zeit vergangen ist (in diesem Fall 0ms) und das der Stack leer ist.
-    Damit wird gewährleistet, dass die Simulation für alle Biome abgeschlossen ist, bevor eine neue gestartet wird.
+    Um einen Stackoverflow zu vermeiden wird computeBiome 
+    als callback von setInterval aufgerufen. 
+    setInterval ruft eine Funktion immer auf, wartet aber mit den Aufruf bis eine
+    festgelegte Zeit vergangen ist (in diesem Fall 0ms) und das der Stack leer ist.
+    Damit wird gewährleistet, dass die Simulation für alle Biome abgeschlossen ist, 
+    bevor eine neue gestartet wird.
     */
     setInterval(function(){
       //seedData sind willkürliche festgelegte Daten eines virtuellem erstem Bioms.
