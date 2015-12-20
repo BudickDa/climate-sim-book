@@ -19,6 +19,7 @@ Jedes Level hat eigene klimatische Bedingungen, die sich auf die unteren Level a
 
 Die Level interagieren mit den Leveln der des anschließenden Bioms, sofern Wind weht. Diese Interaktion findet immer auf gleicher Höhe statt: z. B. Level 1 => Level 1, Level 2 => Level 2 etc.
 
+Somit werden z. B. Wolken von von einem Biom in das nächste geweht.
 
 
 
