@@ -19,9 +19,7 @@ Jedes Level hat eigene klimatische Bedingungen, die sich auf die unteren Level a
 
 Die Level interagieren mit den Leveln der des anschließenden Bioms, sofern Wind weht. Diese Interaktion findet immer auf gleicher Höhe statt: z. B. Level 1 => Level 1, Level 2 => Level 2 etc.
 
-
 ## Das Gesamtsystem
-
 Das Gesamtsystem hat mehrere Ebenen. In der obersten Ebene wird die Interaktion der Biome beschrieben. Zur Vereinfachung sind die Biome nur eindimensional angeordnet.
 Die eintreffende Strahlungsenergie der Sonne ist abhängig von Position und Zeit. Zur Vereinfachung wird angenommen, dass sich alle Biome auf demselben Breiten und Längengrad befinden.
 
@@ -29,7 +27,6 @@ Eine weitere Vereinfachung ist, dass die Interaktion der Biome nur von Westen na
 Das Resultierende System kann wie folgt abgebildet werden:
 
 ![Das System abgebildet](system.jpg)
-
 
 Am Anfang steht ein sogenanntes Seed-Biome. Die Eigenschaften dieses Biomes werden am Anfang zufällig gesetzt. 
 Jedes Biome besteht aus drei Elementen. Eines in großer Höhe, eines in mittlerer Höhe und eines am Boden.
@@ -51,8 +48,6 @@ Biom 2 ermittelt:
 $$Luftdruck_{B1L1}>Luftdruck_{B2L1} => v_{wind}>0$$
 Da der Luftdruck in Biom 1 höher ist als in Biom 2, weht Wind. 
 Daraus folgt, dass die Temperatur aus Biom 1 die Temperatur in Biom 2 beeinflusst (in diesem Fall erhöht).
-
-
 
 ## Nähere Betrachtung
 Bei dem vorliegenden System handelt es sich um ein komplexes vernetztes System, da es diverse Eigenschaften hat die komplexen System entsprechend, auch wenn es noch keine eindeutige Definition für komplexe vernetzte Systeme gibt [1].
