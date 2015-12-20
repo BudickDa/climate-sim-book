@@ -3,14 +3,14 @@
 Im Folgenden soll das Klima aus systemtheoretischer Sicht betrachtet werden. Dazu müssen vorher einige Begrifflichkeiten geklärt werden:
 * **Knoten:** Jedes System besteht aus Knoten, welche eigenständige Elemente sind und Verbindungen zwischen den Knoten. Das vorliegende System besteht nur aus Subsystemen und Elementen.
 * **Elementen:** Hat Ein- und Ausgänge und interne Logik und Eigenschaften. Im vorliegenden System sind die Höhenlevel die Elemente. Sie interagieren mit der Umwelt und haben eine interne Logik. Man kann hierbei auch von Agenten sprechen.
-* **Subsystem:** Ein Subsystem kann entweder eine Anordnung von Systemen sein (z. B.: Ein Biom (Subsystem) besteht aus drei Level (Subsystem)) oder ein System bestehend einzelnen Elementen.
+* **Subsystem:** Ein Subsystem kann entweder eine Anordnung von Systemen sein (z. B.: Ein Biom (Subsystem) besteht aus drei Leveln (Subsystem)) oder ein System bestehend einzelnen Elementen.
 * **Gesamtsystem:** Das Gesamtsystem ist die Summe aller Subsysteme. In diesem Fall alle Biome.
 
 
 Das Gesamtsystem hat mehrere Ebenen. In der obersten Ebene wird die Interaktion der Biome beschrieben. Zur Vereinfachung sind die Biome nur eindimensional angeordnet.
 Die eintreffende Strahlungsenergie der Sonne ist abhängig von Breitengrad und Datum. Da die Biome von Westen nach Osten angeordnet sind, strahlt die Sonne auf alle Biome mit derselben Stärke.
 
-Eine weitere Vereinfachung ist, dass die Interaktion der Biome nur von Westen nach Osten erfolgen kann.
+Eine weitere Vereinfachung ist, dass die Interaktion der Biome nur von Westen nach Osten erfolgen kann (der Wind weht nur von Westen nach Osten).
 Das Resultierende System kann wie folgt abgebildet werden:
 
 ![Das System abgebildet](system.jpg)
