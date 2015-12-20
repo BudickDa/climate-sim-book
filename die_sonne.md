@@ -40,15 +40,39 @@ In JavaScript kann man $$n$$ folgendermaßen berechnen:
       return (new Date().getTime() - san) / secondsOfDay;
     }
 
-Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrade $$\Phi$$.
+Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrade $$\varphi $$ und Stundenwinkel. 
+Die Beziehung ist:
+$$h = \arcsin(\cos(\delta) * \cos(\tau) * \cos(\varphi) + \sin(\delta) * \sin(\varphi)) $$
 
-Zusammenfassen lässt sich diese Abhängigkeit mathematisch:
+Wobei gilt:
 
-$$\beta = arctan{\frac{cos(\epsilon)*sin(\Phi)}{cos(\Phi)}}$$
+$$\delta $$: Die Deklination ist, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikale Länge der Sonne $$\lambda$$.
 
-Fasst man die bisherigen Erkenntnisse zusammen erhält man die folgende Gleichung:
+$$\delta  = \arcsin(\sin(\varepsilon) * \sin(\lambda)) $$
 
-$$E_{Boden} = 1367\frac{W}{m^2}*sin(arctan(\frac{cos((23.439^\circ-0.0000004^\circ)*\frac{t-946728000}{86400})*sin(\Phi)}{cos(\Phi)})$$
+wobei:
 
-Implementiert man die folgende Gleichung in JavaScript ist zu beachten, dass die Winkel in Radiant konvertiert werden.
+$$\lambda = 280,460^\circ + 0,9856474^\circ * n + 1,915^\circ * \sin(357,528^\circ + 0,9856003^\circ \cdot n) + 0,01997^\circ * \sin(2 * 357,528^\circ + 0,9856003^\circ * n)$$
+
+$$\varphi$$ der Breitengrad ist.
+
+$$\tau$$ ist der Stundenwinkel der Sonne, dieser ergibt sich aus der Sonnenzeit. Die Sonnenzeit ist eine vereinheitlichte Zeit, befreit von Zeitzonen und Sommerzeit. 
+
+Nach dieser Zeit bewegt sich die Sonne (von der Erde aus betrachtet) pro Stunde um $$15 ^\circ$$ pro Stunde in Richtung Westen.
+
+Der Stundenwinkel ist also der Stand der Sonne zu Position eines Beobachters auf der Erde, wenn die Ebene auf der der Winkel gemessen wird sich aus der Bahn der Sonne ergibt. Mit Hilfe einer Sonnenuhr kann aus diesem Winkel die Zeit ermittelt werden, deswegen auch der Name Stundenwinkel.
+
+Den Stundenwinkel kann man folgendermaßen ermitteln:
+$$\tau = \theta - \alpha$$
+$$\alpha$$ ist die Rektazension die sich aus der Ekliptik und der ekliptikale Länge der Sonne $$\lambda$$ ergibt:
+
+$$\alpha = \arctan( \frac{\cos(\varepsilon)* \sin(\lambda)}{\cos(\lambda)})$$
+
+$$\theta$$ ist der Schnittpunkt des Himmelsäquators mit der Ekliptik, auch Frühlingspunkt genannt. Diesen ermittelt man aus dem Zeitunterschied der aktuellen Zeitzone mit Greenwich 
+in Stunden ($$utcOffset$$) multipliziert mit $$15 ^\circ$$ und der der ekliptikale Länge der Sonne $$\lambda$$.
+
+$$\theta = 15^\circ * utcOffset + \lambda$$
+
+
+
 
