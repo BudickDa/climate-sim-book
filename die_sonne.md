@@ -41,8 +41,7 @@ Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrade $$\
 Die Beziehung ist:
 $$h = \arcsin(\cos(\delta) * \cos(\tau) * \cos(\varphi) + \sin(\delta) * \sin(\varphi)) $$
 
-Wobei gilt:
-
+Wobei gilt:<br/>
 $$\delta $$: Die Deklination ist, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikale Länge der Sonne $$\lambda$$.<br/>
 $$\delta  = \arcsin(\sin(\varepsilon) * \sin(\lambda)) $$
 
