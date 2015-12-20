@@ -6,6 +6,6 @@
 * [Die Erde](die_erde.md)
 * [Das System](komplexe_vernetzte_systeme.md)
 * [Funktionale Programmierung](funktionale_programmierung.md)
-* Fazit
+* [Fazit](fazit.md)
 * [Literaturverzeichnis](literaturverzeichnis.md)
 
