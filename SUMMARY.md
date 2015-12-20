@@ -5,7 +5,7 @@
 * [Die Sonne](die_sonne.md)
 * [Die Erde](die_erde.md)
 * [Das System](komplexe_vernetzte_systeme.md)
-* Funktionale Programmierung
+* [Funktionale Programmierung](funktionale_programmierung.md)
 * Die Implementierung mit JavaScript
 * Das Ergebnis
 * Fazit
