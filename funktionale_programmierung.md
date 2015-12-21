@@ -51,21 +51,30 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
       return data;
     }
     
-    //Die Luftfeuchtigkeit wird in einer festen Rate aus der Temperatur berechnet
+    /*
+     * Die Luftfeuchtigkeit wird in einer festen Rate aus der Temperatur berechnet
+     */
     function getHumidity(data){
       data.temperature -= _t2h;
       data.humidity += _t2h;
     }
     
-    //Ob das Biom bewölkt ist wird anhand der Luftfeuchtigkeit und der Temperatur festgelegt
+    /*
+     * Ob das Biom bewölkt ist wird anhand der Luftfeuchtigkeit 
+     * und der Temperatur festgelegt
+     */
     function getClouds(data){
         data.cloudy = (data.temperature < 0 && data.humidity > 0) || data.humidity >= 100;
         return data;
     }
     
-    //Das System zum erstellen von Wolken wird erstellt
+    /*
+     * Das System zum erstellen von Wolken wird erstellt
+     */
     var setClouds = _.compose(getClouds, getHumidity, getTemperature);
-    //und ausgeführt
+    /*
+     * und ausgeführt
+     */
     setClouds();
     
     
