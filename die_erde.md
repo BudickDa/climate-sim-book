@@ -1,6 +1,6 @@
 # Die Erde
 
-Nachdem nun eine Möglichkeit besteht die Sonneneinstrahlung in Abhängigkeit von Zeit und Ort zu ermitteln, sollen im Folgenden die Klimamechanismen auf der Erde ermittelt werden.
+Nachdem nun eine Möglichkeit besteht, die Sonneneinstrahlung in Abhängigkeit von Zeit und Ort zu ermitteln, sollen im Folgenden die Klimamechanismen auf der Erde erörtert werden.
 
 Parameter des Systems sollen sein: 
 - Temperatur in Celsius
@@ -9,11 +9,11 @@ Parameter des Systems sollen sein:
 
 
 ## Temperatur
-Die vorherrschende Temperatur ist von der Sonneneinstrahlung abhängig. Die Strahlungsenergie wird allerdings neben dem Höhenwinkel der Sonne (siehe [Die Sonne](die_sonne.md)) auch von der Bewölkung abhängig.
-Trifft ein Sonnenstrahl auf ein Wolke von Wassermolekül gibt es, vereinfacht betrachtet, drei Möglichkeiten
-1. Absorption: Der Sonnenstrahl wird komplett absorbiert, seine Energie regt das Molekül zum schwingen an, es wird wärmer (Strahlungsenergie => Wärmeenergie)
+Die vorherrschende Temperatur ist von der Sonneneinstrahlung abhängig. Die Strahlungsenergie ist allerdings neben dem Höhenwinkel der Sonne (siehe [Die Sonne](die_sonne.md)) auch von der Bewölkung abhängig.
+Trifft ein Sonnenstrahl auf eine Wolke von Wassermolekülen, gibt es vereinfacht betrachtet drei Möglichkeiten
+1. Absorption: Der Sonnenstrahl wird komplett absorbiert, seine Energie regt das Molekül zum Schwingen an, es wird wärmer (Strahlungsenergie => Wärmeenergie)
 
-2. Reflektion: Der Sonnenstrahl wird reflektiert, er verliert einen Teil seiner Energie (Frequenz ändert sich), das es wird ein wenig wärmer und der Sonnenstrahl wird in eine andere Richtung abgelenkt
+2. Reflektion: Der Sonnenstrahl wird reflektiert, er verliert einen Teil seiner Energie (Frequenz ändert sich), die Umgebung erwärmt sich ein wenig und der Sonnenstrahl wird in eine andere Richtung abgelenkt
 
 3. Verfehlung: Der Sonnenstrahl verfehlt die Moleküle und setzt seinen Weg unverändert fort
 
