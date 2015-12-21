@@ -18,6 +18,8 @@ $$ E_{Boden} = E_0 * \sin(\beta)$$<br/>
 $$ E_{Boden} = 1367 \frac{W}{m^2}* \sin(30 ^\circ)$$<br/>
 $$ E_{Boden} = 683.5\frac{W}{m^2}$$
 
+<div style="page-break-after: always;"></div>
+
 ## Ekliptik $$\epsilon$$ und die Jahreszeiten
 
 Der Höhenwinkel der Sonne ändert sich über das Jahr. Grund dafür ist, dass während die Erde ihre Bahn um die Sonne dreht sich der Ausrichtung der Erdachse gegenüber der Sonne ändert.
