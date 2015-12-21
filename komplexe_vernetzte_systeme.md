@@ -34,7 +34,6 @@ Das Resultierende System kann wie folgt abgebildet werden:
 ![Das System abgebildet](system.jpg)
 
 Am Anfang steht ein sogenanntes Seed-Biom. Die Eigenschaften dieses Biomes werden am Anfang zufällig gesetzt. 
-Jedes Biom besteht aus drei Elementen. Eines in großer Höhe, eines in mittlerer Höhe und eines am Boden.
 
 Die Agenten selbst haben zwei Ein- und Ausgänge. Der eine ist für die Aufnahme und Abgabe von Strahlungsenergie zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an bzw. gibt sie an das nächste Biom weiter.
 
