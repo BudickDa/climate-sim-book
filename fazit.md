@@ -1,5 +1,5 @@
 # Fazit
-Die vorliegende Simulation ist weit von der Realität entfernt. Das Klima ist viel zu komplex als dass es durch einen Laien implementiert werden kann. Das war allerdings auch nicht das Ziel. <br/>
+Die vorliegende Simulation ist weit von der Realität entfernt. Das Klima ist viel zu komplex als dass es durch einen Laien implementiert werden kann. Das war allerdings auch nicht das Ziel. 
 Das Ziel war zum einen, eine Karte zu generieren, deren Klimazonen sinnvoll sind. Zum anderen zu zeigen, wie beliebig komplexe Systeme in kleinste Bausteine zerlegt werden können, die wiederverwendbar und überprüfbar sind.
 
 Betrachtet man das zugehörige Softwareprojekt so findet man in den Dateien `test_*.js` Unit-Tests der Funktionen. Komplexe Systeme sind schwer zu überblicken, weswegen die Korrektheit der Implementierung im gesamten schwer zu überprüfen ist.
