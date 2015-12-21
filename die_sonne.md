@@ -11,7 +11,7 @@ Dadurch, dass die Sonnenstrahlen schief auftreffen, wird die Energie aus $$1m^2$
 
 ![Der Höhenwinkel Beta der Sonne beträgt in diesem Beispiel 30 Grad.](Fläche.png)
 
-Im vorliegenden Beispiel beträgt der Winkel der Sonne am Horizont (Höhenwinkel $$\beta$$) 30°.
+Im vorliegenden Beispiel beträgt der Winkel der Sonne am Horizont (Höhenwinkel $$\beta$$) $$30^\circ$$.
 Mit Hilfe des Sinus kann man die Strahlung pro Quadratmeter am Boden berechnen:
 
 $$ E_{Boden} = E_0 * \sin(\beta)$$<br/>
