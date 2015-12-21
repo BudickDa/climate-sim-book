@@ -68,28 +68,27 @@ Zum Vergleich, das Systembild sähe folgendermaßen aus:
 Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit anderen Subsystemen zu einem weiteren Subsystem zusammengefasst werden:
 
     /* Das gesamte Biom wird berechnet. 
-    Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, 
-    werden die Daten entsprechend angepasst (manipulate). 
-    Anschließend wird der im aktuellen Biom angepasst.
-    Dann werden die Wolken ermittelt und ob es regnet. 
-    Beide Subsysteme aktualisieren Temperatur und Luftfeuchtigkeit. 
-    Anschließend wird anhand der Werte die Art des Bioms ermittelt 
-    (Wiese, Wald, Sumpf etc.) und ggf. geändert.
-    Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.
-    */
+     * Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, 
+     * werden die Daten entsprechend angepasst (manipulate). 
+     * Anschließend wird der im aktuellen Biom angepasst.
+     * Dann werden die Wolken ermittelt und ob es regnet. 
+     * Beide Subsysteme aktualisieren Temperatur und Luftfeuchtigkeit. 
+     * Anschließend wird anhand der Werte die Art des Bioms ermittelt 
+     * (Wiese, Wald, Sumpf etc.) und ggf. geändert.
+     * Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.
+     */
     
     var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind, manipulate);
     
     
     /*
-    Um einen Stack overflow zu vermeiden wird computeBiome 
-    als callback von setInterval aufgerufen. 
-    setInterval ruft eine Funktion immer auf, wartet aber mit dem Aufruf bis eine
-    festgelegte Zeit vergangen ist (in diesem Fall 0ms) und dass der Stack leer ist.
-    Damit wird gewährleistet, dass die Simulation für alle Biome abgeschlossen ist, 
-    bevor eine neue gestartet wird.
-
-    */
+     * Um einen Stack overflow zu vermeiden wird computeBiome 
+     * als callback von setInterval aufgerufen. 
+     * setInterval ruft eine Funktion immer auf, wartet aber mit dem Aufruf bis eine
+     * festgelegte Zeit vergangen ist (in diesem Fall 0ms) und dass der Stack leer ist.
+     * Damit wird gewährleistet, dass die Simulation für alle Biome abgeschlossen ist, 
+     * bevor eine neue gestartet wird.
+     */
     setInterval(function(){
       //seedData sind willkürliche festgelegte Daten eines virtuellem erstem Bioms.
       computeBiome(seedData)
