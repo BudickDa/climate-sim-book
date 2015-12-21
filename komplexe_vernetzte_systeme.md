@@ -66,6 +66,12 @@ Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die dive
 Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck ermittelt werden müssen. 
 ![](setClouds.PNG)
 
+Die Reihenfolge ist in diesem System allerdings nicht von Bedeutung, da die Simulation in einer Dauerschleife erfolgt, ist es irrelevant ob z. B. zuerst die Bewölkung und dann der Regen berechnet wird, da im nächsten Durchgang die Berechnung der Bewölkung auf die Berechnung des Regens erfolgt und vice versa.
 
+Die Abhängigkeit ist allerdings von Bedeutung, da es einen ersten Durchgang gibt, in dem nur das Seed-Biom Daten besitzt. Die Abhängigkeit in diesem System sind Temperatur und Luftfeuchtigkeit. Die Temperatur hängt wiederum von der Bewölkung und der Sonneneinstrahlung ab. Die Luftfeuchtigkeit davon ob es Regnet und der Temperatur. Die Sonneneinstrahlung ist nur von Ort und Zeit abhängig und dadurch immer gegeben. Bleibt also nur die Bewölkung als Abhängigkeit übrig.
+
+Damit wäre die Bewölkung abhängig von der Temperatur und die Temperatur wiederum von der Bewölkung. Dieses Problem wird dadurch gelöst, dass im Modell die folgende Annahme gilt:
+
+**Wenn die Bewölkung nicht definiert ist, wird die Abwesenheit von Wolken angenommen. Der Himmel ist also wolkenfrei.**
 
 
