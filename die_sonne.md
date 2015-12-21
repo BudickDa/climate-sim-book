@@ -70,7 +70,7 @@ in Stunden ($$utcOffset$$) multipliziert mit $$15 ^\circ$$ und der ekliptikalen 
 $$\theta = 15^\circ * utcOffset + \lambda$$
 
 Anmerkung: Sämtliche Formeln wurde entnommen aus:
-The Astronomical Almanac (2015 - 2019) (5)
+The Astronomical Almanac (2015 - 2019) [5]
 
 
 
