@@ -18,9 +18,9 @@ Trifft ein Sonnenstrahl auf eine Wolke von Wassermolekülen, gibt es vereinfacht
 3. Verfehlung: Der Sonnenstrahl verfehlt die Moleküle und setzt seinen Weg unverändert fort
 
 
-Für das Modell bedeutet das folgendes: Wolken reduzieren die Strahlungsenergie der Sonne, heizen sich dabei allerdings auf.
-Da es nicht zielführend war einzelne Sonnenstrahlen und Wassermoleküle zu simulieren, wurde hier ein qualitativer Ansatz gewählt. Es wird nur beachtet, ob Wolken vorhanden sind oder nicht. Sind Wolken vorhanden gibt des zwei Parameter: Absorption und Reflektion. Trifft das Sonnenlicht auf eine Wolkenschicht, so wird der Anteil der Absorption und Reflektion abgezogen. Die übriggebliebene Energie wandert weiter nach unten wo sie entweder auf weitere Wolken oder den Boden trifft. Der Anteil der Absorption wird in Wärmeenergie umgerechnet, resultiert also in einem Temperaturanstieg.
-Dieser Temperaturanstieg $$\Delta T$$ wird aus einem festgelegtem Parameter $$\_e2t$$ ermittelt, da das Volumen der Wolken nicht bekannt ist. Der reflektierte Anteil wird ignoriert. Er gehört zu jener Energie, die ins Weltall abgestrahlt wird und damit das System verlässt.
+Für das Modell bedeutet das Folgendes: Wolken reduzieren die Strahlungsenergie der Sonne, heizen sich dabei allerdings auf.
+Da es nicht zielführend war, einzelne Sonnenstrahlen und Wassermoleküle zu simulieren, wurde hier ein qualitativer Ansatz gewählt. Es wird nur beachtet, ob Wolken vorhanden sind oder nicht. Sind Wolken vorhanden gibt es zwei Parameter: Absorption und Reflektion. Trifft das Sonnenlicht auf eine Wolkenschicht, so wird der Anteil der Absorption und Reflektion abgezogen. Die übriggebliebene Energie wandert weiter nach unten wo sie entweder auf weitere Wolken oder den Boden trifft. Der Anteil der Absorption wird in Wärmeenergie umgerechnet, resultiert also in einem Temperaturanstieg.
+Dieser Temperaturanstieg $$\Delta T$$ wird aus einem festgelegten Parameter $$\_e2t$$ ermittelt, da das Volumen der Wolken nicht bekannt ist. Der reflektierte Anteil wird ignoriert. Er gehört zu jener Energie, die ins Weltall abgestrahlt wird und damit das System verlässt.
 
 Beispiel:
 Sei Absorption $$a$$ und Reflektion $$r$$<br/>
@@ -32,7 +32,7 @@ $$E_{Sonne}^* = E_{Sonne} * r$$
 
 
 ##Luftfeuchtigkeit
-Luftfeuchtigkeit $$h$$ ist der Gehalt der Luft an Wasserdampf. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmoleküle:
+Luftfeuchtigkeit $$h$$ ist der Gehalt an Wasserdampf in der Luft. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmoleküle:
 $$h = 100\frac{m_{Wasser}}{m_{Luft}}$$
 Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das überwinden der Oberflächenspannung entzieht der Umgebung Energie, die sich dadurch abkühlt. [6, S. 42]
 ![Ein Wassermolekül durchbricht die Wasseroberfläche. Luftfeuchtigkeit steigt, Temperatur sinkt.](verdunstung.PNG)
