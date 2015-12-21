@@ -76,7 +76,7 @@ $$\frac{p_2}{p_1} = \frac{T_2}{T_1}$$
 außerdem:
 
 $$\Delta p = p_1 - p_2 $$ <br/>
-da der Luftdruck im ersten Biom immer größer ist als zweiten, da sonst kein Wind berechnet werden würde, denn Wind von rechts nach links ist verboten.
+da der Luftdruck im ersten Biom immer größer ist als im zweiten, da sonst kein Wind berechnet werden würde, denn Wind von rechts nach links ist verboten.
 
 damit gilt:
 
