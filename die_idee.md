@@ -1,6 +1,6 @@
 # Die Idee
 
-Prozedurale Generierung ermöglicht es gigantische Welten abzubilden, die weder von einem Menschen designt noch auf einem Datenträger gespeichert worden sind. Das im nächsten Jahr veröffentlichte Videospiel *No Man's Sky* zum Beispiel findet in einem Universum statt, welches komplett von einem Algorithmus generiert wird. Anhand der Position und Blickrichtung des Spielers wird die direkte Umwelt in drei Ebenen gerendert. Einmal die direkte Umgebung, dann die Fernsicht auf dem jeweiligen Planeten und in der dritten Ebene Planeten und Sternsysteme in der Nähe [1]. 
+Prozedurale Generierung ermöglicht es, gigantische Welten abzubilden, die weder von einem Menschen designt noch auf einem Datenträger gespeichert worden sind. Das im nächsten Jahr veröffentlichte Videospiel *No Man's Sky* findet in einem Universum statt, welches komplett von einem Algorithmus generiert wird. Anhand der Position und Blickrichtung des Spielers, wird die direkte Umwelt in drei Ebenen (level of detail) gerendert. Einmal die direkte Umgebung, dann die Fernsicht auf dem jeweiligen Planeten und in der dritten Ebene Planeten und Sternsysteme in der Nähe [1].
 
 Jeder Stern den der Spieler sieht kann auch besucht werden. Fast jeder Stern ist Teil eines Sonnensystems mit Planeten und Monden. Insgesamt wird die Anzahl der Planeten mit $$ 2 ^{64} = 18,446,744,073,709,551,616$$ geschätzt, da diese Zahl die Länge des Seeds ist. [2]
 
