@@ -5,7 +5,7 @@ Nachdem nun eine Möglichkeit besteht die Sonneneinstrahlung in Abhängigkeit vo
 Parameter des Systems sollen sein: 
 - Temperatur in Celsius
 - Luftfeuchtigkeit in %
-- Luftdruck in $$Pa$$ und Wind
+- Luftdruck und Wind
 
 
 ## Temperatur
