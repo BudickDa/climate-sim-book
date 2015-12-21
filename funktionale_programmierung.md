@@ -33,12 +33,12 @@ Komplexe Systeme können auf diese Weise in einfachste Blöcke zerlegt und anein
     var gesamt = _.compose(two, one);
 
 In der Mathematik werden Funktionen von innen nach außen gelöst.
-Ebenso in JavaScript. Verwendet man die Funktion _.compose() (aus der Bibliothek Underscore.js), sind die Funktionen von rechts nach Links zu lesen.
+Ebenso in JavaScript. Verwendet man die Funktion _.compose() (aus der Bibliothek Underscore.js), sind die Funktionen von Rechts nach Links zu lesen.
 
 
 Man nehme ein Beispiel aus dem Modell:
 
-Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchtigkeit benötigt
+Um zu ermitteln, ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchtigkeit benötigt
 
     function getTemperature(data){
       var e_sun = getSun(data); //die Sonnenstrahlung an diesem Ort
@@ -66,8 +66,8 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
 
     
     /*
-     * Ob das Biom bewölkt ist wird anhand der Luftfeuchtigkeit 
-     * und der Temperatur festgelegt
+     * Ob das Biom bewölkt ist, wird anhand der Luftfeuchtigkeit 
+     * und der Temperatur festgelegt.
      */
     function getClouds(data){
         data.cloudy = (data.temperature < 0 && data.humidity > 0) || data.humidity >= 100;
@@ -75,7 +75,7 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
     }
     
     /*
-     * Das System zum erstellen von Wolken wird erstellt
+     * Die Funktion zum Erstellen von Wolken wird aus mehreren Funktionen kombiniert.
      */
     var setClouds = _.compose(getClouds, getHumidity, getTemperature);
     /*
@@ -84,7 +84,7 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
     setClouds();
     
     
-Zum Vergleich, das Systembild sähe folgendermaßen aus:
+Zum Vergleich: Das Systembild sähe folgendermaßen aus:
 ![](setClouds.PNG)
 
 Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit anderen Subsystemen zu einem weiteren Subsystem zusammengefasst werden:
@@ -92,7 +92,6 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
     /* Das gesamte Biom wird berechnet. 
      * Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, 
      * werden die Daten entsprechend angepasst (manipulate). 
-     * Anschließend wird der im aktuellen Biom angepasst.
      * Dann werden die Wolken ermittelt und ob es regnet. 
      * Beide Subsysteme aktualisieren Temperatur und Luftfeuchtigkeit. 
      * Anschließend wird anhand der Werte die Art des Bioms ermittelt 
@@ -100,7 +99,7 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
      * Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.
      */
     
-    var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind, manipulate);
+    var computeBiome = _.compose(next, setBiom, setRain, setClouds, manipulate);
     
 <br/>
 
