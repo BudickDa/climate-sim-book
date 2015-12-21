@@ -106,10 +106,11 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
     /*
      * Um einen Stack overflow zu vermeiden wird computeBiome 
      * als callback von setInterval aufgerufen. 
-     * setInterval ruft eine Funktion immer wieder auf, wartet aber mit dem Aufruf bis eine
-     * festgelegte Zeit vergangen ist (in diesem Fall 0ms) und dass der Stack leer ist.
-     * Damit wird gewährleistet, dass die Simulation für alle Biome abgeschlossen ist, 
-     * bevor eine neue gestartet wird.
+     * setInterval ruft eine Funktion immer wieder auf, 
+     * wartet aber mit dem Aufruf bis eine festgelegte Zeit vergangen ist
+     * (in diesem Fall 0ms) und dass der Stack leer ist.
+     * Damit wird gewährleistet, dass die Simulation für alle Biome
+     * abgeschlossen ist, bevor eine neue gestartet wird.
      */
     setInterval(function(){
       /*
