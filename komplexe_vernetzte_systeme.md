@@ -49,8 +49,8 @@ z. B.:
 | Luftdruck: 1200 | Luftdruck: 1000 |
 | Temperatur: 28 | Temperatur: 25  ||
 
-Biom 2 ermittelt:
-$$Luftdruck_{B1L1}>Luftdruck_{B2L1} => v_{wind}>0$$
+Biom 2 ermittelt:<br/>
+$$Luftdruck_{B1L1}>Luftdruck_{B2L1} => v_{wind}>0$$<br/>
 Da der Luftdruck in Biom 1 höher ist als in Biom 2, weht Wind. 
 Daraus folgt, dass die Temperatur aus Biom 1 die Temperatur in Biom 2 beeinflusst (in diesem Fall erhöht).
 
@@ -61,7 +61,8 @@ Zum einen ist es **chaotisch**. Ein chaotisches System ist zwar deterministisch,
 
 Desweiteren ist es **nichtlinear**. Nichtlineare Systeme sind dynamischen Systemen konzeptuell ähnlich. Dynamische Systeme sind vergleichbar mit Objekten, deren Status sich über Zeit gemäß dynamischen Regeln entwickelt. Diese Regeln sind deterministische Entwicklungsoperatoren, d. h. Zufall spielt in einem solchen System keine Rolle [3].
 
-## Abhängigkeiten
+## Abhängigkeiten und Reihenfolge
+Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diverse klimatischen Bedingungen zusammen. 
 
 
 
