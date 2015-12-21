@@ -34,12 +34,15 @@ $$E_{Sonne}^* = E_{Sonne} * r$$
 ##Luftfeuchtigkeit
 Luftfeuchtigkeit $$h$$ ist der Gehalt an Wasserdampf in der Luft. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmolekülen:
 $$h = 100\frac{m_{Wasser}}{m_{Luft}}$$
-Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das überwinden der Oberflächenspannung entzieht der Umgebung Energie, die sich dadurch abkühlt. [6, S. 42]
+Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das Überwinden der Oberflächenspannung entzieht der Umgebung Energie, welche sich dadurch abkühlt. [6, S. 42]
 ![Ein Wassermolekül durchbricht die Wasseroberfläche. Luftfeuchtigkeit steigt, Temperatur sinkt.](verdunstung.PNG)
 
 Die Umkehr zur Verdunstung ist Kondensation. Kondensation erhöht die Umgebungstemperatur, es bilden sich Wassertropfen in der Luft, die zu Boden fallen. Man spricht hierbei von Regen.
-Im Modell wird Regen und Verdunstung sehr einfach dargestellt. Es wird eine Grenze in der Luftfeuchtigkeit $$ x $$ festgelegt
-Solange gilt $$ h<x $$: <br/>Temperatur wird um einen festen Parameter verringert, Luftfeuchtigkeit erhöht.
+Im Modell wird Regen und Verdunstung sehr einfach dargestellt. Es wird eine Grenze in der Luftfeuchtigkeit $$ x $$ festgelegt:
+
+Solange gilt $$ h<x $$: <br/>
+Temperatur wird um einen festen Parameter verringert, Luftfeuchtigkeit erhöht.
+
 Wenn $$ h>=x $$:<br/>Die Temperatur wird um einen festen Parameter erhöht und die Luftfeuchtigkeit verringert. Es regnet.
 
 Aus der Luftfeuchtigkeit resultieren Wolken. Wolken können entweder aus übersättigter Luft bestehen ($$ h > 100 \% $$) oder aus Eiskristallen ($$T<0^\circ und\ h>0 \% $$). Wolken die sich am Boden befinden nennt man Nebel. [6, S. 44 ff]
