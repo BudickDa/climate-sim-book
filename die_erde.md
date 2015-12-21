@@ -32,7 +32,7 @@ $$E_{Sonne}^* = E_{Sonne} * r$$
 
 
 ##Luftfeuchtigkeit
-Luftfeuchtigkeit $$h$$ ist der Gehalt an Wasserdampf in der Luft. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmoleküle:
+Luftfeuchtigkeit $$h$$ ist der Gehalt an Wasserdampf in der Luft. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmolekülen:
 $$h = 100\frac{m_{Wasser}}{m_{Luft}}$$
 Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das überwinden der Oberflächenspannung entzieht der Umgebung Energie, die sich dadurch abkühlt. [6, S. 42]
 ![Ein Wassermolekül durchbricht die Wasseroberfläche. Luftfeuchtigkeit steigt, Temperatur sinkt.](verdunstung.PNG)
