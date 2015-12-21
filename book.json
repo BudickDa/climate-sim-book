@@ -1,7 +1,5 @@
 {
     "plugins": [
-        "katex",
-        "-github"
-    ],
-    "pluginsConfig": {}
+        "katex"
+    ]
 }
