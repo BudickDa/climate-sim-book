@@ -44,28 +44,28 @@ Die Beziehung ist:
 $$h = \arcsin(\cos(\delta) * \cos(\tau) * \cos(\varphi) + \sin(\delta) * \sin(\varphi)) $$
 
 Wobei gilt:<br/>
-$$\delta $$: Die Deklination ist, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikale Länge der Sonne $$\lambda$$.<br/>
+$$\delta $$: Die Deklination, diese ergibt sich aus dem $$\arcsin$$ der Ekliptik $$\epsilon$$ und der ekliptikalen Länge der Sonne $$\lambda$$.<br/>
 $$\delta  = \arcsin(\sin(\varepsilon) * \sin(\lambda)) $$
 
 wobei:<br/>
 $$\lambda = 280,460^\circ + 0,9856474^\circ * n + 1,915^\circ * \sin(357,528^\circ + 0,9856003^\circ \cdot n) + 0,01997^\circ * \sin(2 * 357,528^\circ + 0,9856003^\circ * n)$$
 
-$$\varphi$$ der Breitengrad ist.
+$$\varphi$$ ist der Breitengrad.
 
 $$\tau$$ ist der Stundenwinkel der Sonne, dieser ergibt sich aus der Sonnenzeit. Die Sonnenzeit ist eine vereinheitlichte Zeit, befreit von Zeitzonen und Sommerzeit. 
 
-Nach dieser Zeit bewegt sich die Sonne (von der Erde aus betrachtet) pro Stunde um $$15 ^\circ$$ pro Stunde in Richtung Westen.
+Nach dieser Zeit bewegt sich die Sonne (von der Erde aus betrachtet) pro Stunde um $$15 ^\circ$$ in Richtung Westen.
 
-Der Stundenwinkel ist also der Stand der Sonne zu Position eines Beobachters auf der Erde, wenn die Ebene auf der der Winkel gemessen wird sich aus der Bahn der Sonne ergibt. Mit Hilfe einer Sonnenuhr kann aus diesem Winkel die Zeit ermittelt werden, deswegen auch der Name Stundenwinkel.
+Der Stundenwinkel ist also der Stand der Sonne zur Position eines Beobachters auf der Erde, wenn die Ebene, auf der der Winkel gemessen wird, sich aus der Bahn der Sonne ergibt. Mit Hilfe einer Sonnenuhr kann aus diesem Winkel die Zeit ermittelt werden, deswegen auch der Name Stundenwinkel.
 
-Den Stundenwinkel kann man folgendermaßen ermitteln:
-$$\tau = \theta - \alpha$$
-$$\alpha$$ ist die Rektazension die sich aus der Ekliptik und der ekliptikale Länge der Sonne $$\lambda$$ ergibt:
+Den Stundenwinkel kann man folgendermaßen ermitteln:<br/>
+$$\tau = \theta - \alpha$$<br/>
+$$\alpha$$ ist die Rektazension, die sich aus der Ekliptik und der ekliptikalen Länge der Sonne $$\lambda$$ ergibt:
 
 $$\alpha = \arctan( \frac{\cos(\varepsilon)* \sin(\lambda)}{\cos(\lambda)})$$
 
 $$\theta$$ ist der Schnittpunkt des Himmelsäquators mit der Ekliptik, auch Frühlingspunkt genannt. Diesen ermittelt man aus dem Zeitunterschied der aktuellen Zeitzone mit Greenwich 
-in Stunden ($$utcOffset$$) multipliziert mit $$15 ^\circ$$ und der der ekliptikale Länge der Sonne $$\lambda$$.
+in Stunden ($$utcOffset$$) multipliziert mit $$15 ^\circ$$ und der ekliptikalen Länge der Sonne $$\lambda$$.
 
 $$\theta = 15^\circ * utcOffset + \lambda$$
 
