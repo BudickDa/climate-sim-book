@@ -27,7 +27,9 @@ Komplexe Systeme können auf diese Weise in einfachste Blöcke zerlegt und anein
         return two(one(x));
     }
     
-    //oder eleganter:
+    /*
+     * oder eleganter:
+     */
     var gesamt = _.compose(one, two);
 
 Man nehme ein Beispiel aus dem Modell:
@@ -37,10 +39,15 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
     function getTemperature(data){
       var e_sun = getSun(data); //die Sonnenstrahlung an diesem Ort
       
-      //die Temperaturänderung wird anhand der Konstante _e2t aus der Strahlungsenergie berechnet
+      /*
+       * die Temperaturänderung wird anhand der Konstante _e2t 
+       * aus der Strahlungsenergie berechnet
+       */
       data.temperature += e_sun * _e2t;
       
-      //data enthält die gesamten Daten eines jeden Biomes
+      /*
+       * data enthält die gesamten Daten eines jeden Biomes
+       */
       return data;
     }
     
@@ -90,7 +97,10 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
      * bevor eine neue gestartet wird.
      */
     setInterval(function(){
-      //seedData sind willkürliche festgelegte Daten eines virtuellem erstem Bioms.
+      /*
+       * seedData sind willkürliche festgelegte Daten 
+       * eines virtuellem erstem Bioms.
+       */
       computeBiome(seedData)
     }, 0);
 
