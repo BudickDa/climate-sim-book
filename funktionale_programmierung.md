@@ -30,7 +30,11 @@ Komplexe Systeme können auf diese Weise in einfachste Blöcke zerlegt und anein
     /*
      * oder eleganter:
      */
-    var gesamt = _.compose(one, two);
+    var gesamt = _.compose(two, one);
+
+In der Mathematik werden Funktionen von innen nach außen gelöst.
+Ebenso in JavaScript. Verwendet man die Funktion _.compose() (aus der Bibliothek Underscore.js), sind die Funktionen von rechts nach Links zu lesen.
+
 
 Man nehme ein Beispiel aus dem Modell:
 
