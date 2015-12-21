@@ -55,7 +55,7 @@ Daraus folgt, dass die Temperatur aus Biom 1 die Temperatur in Biom 2 beeinfluss
 
 <div style="page-break-after: always;"></div>
 ## Abhängigkeiten und Reihenfolge
-Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diverse klimatischen Bedingungen zusammen. 
+Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diversen klimatischen Bedingungen zusammen. 
 Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck ermittelt werden müssen. 
 ![](setClouds.PNG)
 
