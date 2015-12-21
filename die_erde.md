@@ -5,10 +5,8 @@ Nachdem nun eine Möglichkeit besteht die Sonneneinstrahlung in Abhängigkeit vo
 Parameter des Systems sollen sein: 
 - Temperatur in Celsius
 - Luftfeuchtigkeit in %
-- Bewölkung ($$true/false$$)
-- Regen ($$true/false$$)
-- Luftdruck in $$Pa$$
-- Windgeschwindigkeit ($$\frac{m}{s}$$)
+- Luftdruck in $$Pa$$ und Windgeschwindigkeit ($$\frac{m}{s}$$)
+
 
 ## Temperatur
 Die vorherrschende Temperatur ist von der Sonneneinstrahlung abhängig. Die Strahlungsenergie wird allerdings neben dem Höhenwinkel der Sonne (siehe [Die Sonne](die_sonne.md)) auch von der Bewölkung abhängig.
@@ -44,6 +42,9 @@ Solange gilt $$ h<x $$: <br/>Temperatur wird um einen festen Parameter verringer
 Wenn $$ h>=x $$:<br/>Die Temperatur wird um einen festen Parameter erhöht und die Luftfeuchtigkeit verringert. Es regnet.
 
 Aus der Luftfeuchtigkeit resultieren Wolken. Wolken können entweder aus übersättigter Luft bestehen ($$ h > 100 \% $$) oder aus Eiskristallen ($$T<0^\circ und\ h>0 \% $$). Wolken die sich am Boden befinden nennt man Nebel. [6]
+
+
+##Luftdruck und Windgeschwindigkeit
 
 
 
