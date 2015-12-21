@@ -35,9 +35,9 @@ Das Resultierende System kann wie folgt abgebildet werden:
 
 Am Anfang steht ein sogenanntes Seed-Biom. Die Eigenschaften dieses Biomes werden am Anfang zufällig gesetzt. 
 
-Die Agenten selbst haben zwei Ein- und Ausgänge. Der eine ist für die Aufnahme und Abgabe von Strahlungsenergie zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an bzw. gibt sie an das nächste Biom weiter.
+Die Biome selbst haben zwei Ein- und Ausgänge. Der eine ist für die Aufnahme von Strahlungsenergie (Sonnenschein) zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an bzw. gibt sie an das nächste Biom weiter.
 
-Die Elemente jedes Biomes interagieren über den Wind mit dem der Höhe entsprechenden nächstem Biom. Wenn auf der entsprechenden Höhe zwischen zwei Biomen Wind weht ($$v_{wind} > 0$$), beeinflussen die Eigenschaften des vorherigen Biomes die des nächsten.
+Die Level jedes Biomes interagieren über den Wind mit dem der Höhe entsprechenden nächstem Biom. Wenn auf der entsprechenden Höhe zwischen zwei Biomen Wind weht, beeinflussen die Eigenschaften des vorherigen Biomes die des nächsten.
 
 Aus den herangetragenen Werten wird mit Hilfe der internen Logik der momentane Ist-Zustand ermittelt. Anschließend werden dem Ist-Zustand entsprechend die Werte der Ausgänge gesetzt.
 Jedes Element kann auf die Werte der benachbarten Elemente zugreifen und entscheidet nach festgelegten Regeln ob es die Werte aufnimmt:
