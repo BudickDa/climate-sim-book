@@ -22,7 +22,7 @@ $$ E_{Boden} = 683.5\frac{W}{m^2}$$
 
 ## Ekliptik $$\epsilon$$ und die Jahreszeiten
 
-Der Höhenwinkel der Sonne ändert sich über das Jahr. Grund dafür ist, dass während die Erde ihre Bahn um die Sonne dreht sich der Ausrichtung der Erdachse gegenüber der Sonne ändert.
+Der Höhenwinkel der Sonne ändert sich über das Jahr. Grund dafür ist, dass während die Erde ihre Bahn um die Sonne zieht, sich die Ausrichtung der Erdachse gegenüber der Sonne ändert.
 
 ![Die Ausrichtung der Erdachse zur Sonne ändert sich mit jeder Jahreszeit um 45 Grad](Jahreszeit.png)
 
@@ -39,7 +39,7 @@ In JavaScript kann man $$n$$ folgendermaßen berechnen:
       return (new Date().getTime() - san) / secondsOfDay;
     }
 
-Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrade $$\varphi $$ und Stundenwinkel. 
+Neben der Ekliptik ist der Höhenwinkel außerdem abhängig vom Breitengrad $$\varphi $$ und dem Stundenwinkel $$\tau$$. 
 Die Beziehung ist:
 $$h = \arcsin(\cos(\delta) * \cos(\tau) * \cos(\varphi) + \sin(\delta) * \sin(\varphi)) $$
 
