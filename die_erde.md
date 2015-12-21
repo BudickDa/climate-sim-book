@@ -55,7 +55,7 @@ Da in der Natur alles dem Ausgleich zustrebt, fließt Luft vom Hochdruckgebiet z
 
 ![](luftdruck.PNG)
 
-Im Modell wurde festgelegt, dass Wind nur von rechts nach links wehen kann. Wind weht damit nur dann zwischen zwei Biomen, wenn der Luftdruck im rechten Biom geringer ist als im linken. 
+Im Modell wurde festgelegt, dass Wind nur von links nach rechts wehen kann. Wind weht damit nur dann zwischen zwei Biomen, wenn der Luftdruck im rechten Biom geringer ist als im linken. 
 Der Luftdruck wird aus dem Temperaturunterschied ermittelt.
 Es gilt die Annahme, dass beide Biome dasselbe konstante Volumen haben, dadurch handelt es sich um einen isochoren Vorgang. 
 
