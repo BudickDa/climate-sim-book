@@ -56,12 +56,13 @@ Daraus folgt, dass die Temperatur aus Biom 1 die Temperatur in Biom 2 beeinfluss
 <div style="page-break-after: always;"></div>
 ## Abhängigkeiten und Reihenfolge
 Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diversen klimatischen Bedingungen zusammen. 
-Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck ermittelt werden müssen. 
+Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck festgelegt werden müssen. 
 ![](setClouds.PNG)
 
-Die Reihenfolge ist in diesem System allerdings nicht von Bedeutung, da die Simulation in einer Dauerschleife erfolgt, ist es irrelevant ob z. B. zuerst die Bewölkung und dann der Regen berechnet wird, da im nächsten Durchgang die Berechnung der Bewölkung auf die Berechnung des Regens erfolgt und vice versa.
+Die Reihenfolge ist in diesem System allerdings nicht von Bedeutung. 
+Da die Simulation in einer Dauerschleife erfolgt, ist es irrelevant, ob z. B. zuerst die Bewölkung und dann der Regen berechnet wird, da im nächsten Durchgang die Berechnung der Bewölkung auf die Berechnung des Regens erfolgt und vice versa.
 
-Die Abhängigkeit ist allerdings von Bedeutung, da es einen ersten Durchgang gibt, in dem nur das Seed-Biom Daten besitzt. Die Abhängigkeit in diesem System sind Temperatur und Luftfeuchtigkeit. Die Temperatur hängt wiederum von der Bewölkung und der Sonneneinstrahlung ab. Die Luftfeuchtigkeit davon ob es Regnet und der Temperatur. Die Sonneneinstrahlung ist nur von Ort und Zeit abhängig und dadurch immer gegeben. Bleibt also nur die Bewölkung als Abhängigkeit übrig.
+Die Abhängigkeit ist allerdings von Bedeutung, da es einen ersten Durchgang gibt, in dem nur das Seed-Biom Daten besitzt. Die Abhängigkeiten in diesem System sind Temperatur und Luftfeuchtigkeit. Die Temperatur hängt wiederum von der Bewölkung und der Sonneneinstrahlung ab. Die Luftfeuchtigkeit davon, ob es regnet und der Temperatur. Die Sonneneinstrahlung ist nur von Ort und Zeit abhängig und dadurch immer gegeben. Bleibt also nur die Bewölkung als ursprüngliche Abhängigkeit übrig.
 
 Damit wäre die Bewölkung abhängig von der Temperatur und die Temperatur wiederum von der Bewölkung. Dieses Problem wird dadurch gelöst, dass im Modell die folgende Annahme gilt:
 
