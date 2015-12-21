@@ -69,7 +69,8 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
 
     /* Das gesamte Biom wird berechnet. 
     Zuerst wird der Wind getestet, wenn Wind aus dem vorherigen Biom weht, 
-    werden die Daten entsprechend angepasst. 
+    werden die Daten entsprechend angepasst (manipulate). 
+    Anschließend wird der im aktuellen Biom angepasst.
     Dann werden die Wolken ermittelt und ob es regnet. 
     Beide Subsysteme aktualisieren Temperatur und Luftfeuchtigkeit. 
     Anschließend wird anhand der Werte die Art des Bioms ermittelt 
@@ -77,7 +78,7 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
     Zuletzt wird das nächste computeBiome für das nächste Biom aufgerufen.
     */
     
-    var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind);
+    var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind, manipulate);
     
     
     /*
