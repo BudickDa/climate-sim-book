@@ -103,6 +103,7 @@ Geht man noch einen Schritt zurück, kann dieses Subsystem `setClouds` mit ander
     var computeBiome = _.compose(next, setBiom, setRain, setClouds, setWind, manipulate);
     
 <br/>
+
     /*
      * Um einen Stack overflow zu vermeiden wird computeBiome 
      * als callback von setInterval aufgerufen. 
