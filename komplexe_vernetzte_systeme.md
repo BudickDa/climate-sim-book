@@ -63,7 +63,7 @@ Desweiteren ist es **nichtlinear**. Nichtlineare Systeme sind dynamischen System
 
 ## Abhängigkeiten und Reihenfolge
 Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diverse klimatischen Bedingungen zusammen. 
-
+Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck ermittelt werden müssen. 
 
 
 
