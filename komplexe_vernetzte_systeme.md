@@ -8,14 +8,14 @@ Im Folgenden soll das Klima aus systemtheoretischer Sicht betrachtet werden. Daz
 
 
 ## Das Biom
-Ein Biom ist ein virtuelles Gebiet mit eine bestimmten Fläche. Jedes Biom wurde in drei Höhenlevel unterteilt: 
+Ein Biom ist ein virtuelles Gebiet mit einer bestimmten Fläche. Jedes Biom wurde in drei Höhenlevel unterteilt: 
 - Level 1: Der Boden.
 - Level 2: Untere Atmosphäre (ca. 3000 m)
 - Level 3: Obere Atmosphäre (ca. 7000 m)
 
 Jedes Level hat eigene klimatische Bedingungen, die sich auf die unteren Level auswirken können:
 - Bewölkung: Dämpft das Sonnenlicht
-- Regen: Erhöht das Grundwasser am Boden
+- Regen: Senkt die Luftfeuchtigkeit
 
 Die Level interagieren mit den Leveln der des anschließenden Bioms, sofern Wind weht. Diese Interaktion findet immer auf gleicher Höhe statt: z. B. Level 1 => Level 1, Level 2 => Level 2 etc.
 
