@@ -53,13 +53,6 @@ $$Luftdruck_{B1L1}>Luftdruck_{B2L1} => v_{wind}>0$$<br/>
 Da der Luftdruck in Biom 1 höher ist als in Biom 2, weht Wind. 
 Daraus folgt, dass die Temperatur aus Biom 1 die Temperatur in Biom 2 beeinflusst (in diesem Fall erhöht).
 
-## Nähere Betrachtung
-Bei dem vorliegenden System handelt es sich um ein komplexes vernetztes System, da es diverse Eigenschaften hat die komplexen System entsprechend, auch wenn es noch keine eindeutige Definition für komplexe vernetzte Systeme gibt [1].
-
-Zum einen ist es **chaotisch**. Ein chaotisches System ist zwar deterministisch, der Ausgang ist aber sehr stark von den Anfangswerten abhängig. Kleinste Ungenauigkeiten (z. B. Rundungsfehler) verändern das Ergebnis so stark, dass Vorhersagen über den Ausgang, nach einer größeren Zeitspanne, unmöglich sind[2]. Je weiter ein Biom vom Startpunkt (Seed-Biom) entfernt ist, desto chaotischer ist dessen Zustand.
-
-Desweiteren ist es **nichtlinear**. Nichtlineare Systeme sind dynamischen Systemen konzeptuell ähnlich. Dynamische Systeme sind vergleichbar mit Objekten, deren Status sich über Zeit gemäß dynamischen Regeln entwickelt. Diese Regeln sind deterministische Entwicklungsoperatoren, d. h. Zufall spielt in einem solchen System keine Rolle [3].
-
 <div style="page-break-after: always;"></div>
 ## Abhängigkeiten und Reihenfolge
 Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diverse klimatischen Bedingungen zusammen. 
