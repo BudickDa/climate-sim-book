@@ -59,7 +59,7 @@ Im Modell wurde festgelegt, dass Wind nur von links nach rechts wehen kann. Wind
 Der Luftdruck wird aus dem Temperaturunterschied ermittelt.
 Es gilt die Annahme, dass beide Biome dasselbe konstante Volumen haben, dadurch handelt es sich um einen isochoren Vorgang. 
 
-Damit gilt: $$\frac{T}{p} = const$$ wobei $$T$$ die Temperatur und der $$p$$ der Luftdruck ist.
+Damit gilt: $$\frac{T}{p} = const$$ wobei $$T$$ die Temperatur und $$p$$ der Luftdruck ist.
 
 Daraus kann abgeleitet werden:
 
