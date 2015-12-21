@@ -37,13 +37,13 @@ Am Anfang steht ein sogenanntes Seed-Biom. Die Eigenschaften dieses Biomes werde
 
 Die Biome selbst haben zwei Eingänge und einen Ausgang. Der erste Eingang ist für die Aufnahme von Strahlungsenergie (Sonnenschein) zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an. Der Ausgang gibt sie an das nächste Biom weiter.
 
-Die Level jedes Biomes interagieren über den Wind mit dem der Höhe entsprechenden nächstem Biom. Wenn auf der entsprechenden Höhe zwischen zwei Biomen Wind weht, beeinflussen die Eigenschaften des vorherigen Biomes die des nächsten.
+Die Level jedes Biomes interagieren über den Wind mit dem der Höhe entsprechenden nächsten Biom. Wenn auf der entsprechenden Höhe zwischen zwei Biomen Wind weht, beeinflussen die Eigenschaften des vorherigen Biomes die des nächsten.
 
 Aus den herangetragenen Werten wird mit Hilfe der internen Logik der momentane Ist-Zustand ermittelt. Anschließend werden dem Ist-Zustand entsprechend die Werte der Ausgänge gesetzt.
 Jedes Element kann auf die Werte der benachbarten Elemente zugreifen und entscheidet nach festgelegten Regeln ob es die Werte aufnimmt:
 z. B.:
 
-| Biome 1 - Level 1 | Biom 2 - Level 1 |
+| Biom 1 - Level 1 | Biom 2 - Level 1 |
 | -- | -- |
 | Luftdruck: 1200 | Luftdruck: 1000 |
 | Temperatur: 28 | Temperatur: 25  ||
