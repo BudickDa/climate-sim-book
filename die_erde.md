@@ -5,7 +5,7 @@ Nachdem nun eine Möglichkeit besteht die Sonneneinstrahlung in Abhängigkeit vo
 Parameter des Systems sollen sein: 
 - Temperatur in Celsius
 - Luftfeuchtigkeit in %
-- Luftdruck in $$Pa$$ und Windgeschwindigkeit ($$\frac{m}{s}$$)
+- Luftdruck in $$Pa$$ und Wind
 
 
 ## Temperatur
@@ -16,6 +16,7 @@ Trifft ein Sonnenstrahl auf ein Wolke von Wassermolekül gibt es, vereinfacht be
 2. Reflektion: Der Sonnenstrahl wird reflektiert, er verliert einen Teil seiner Energie (Frequenz ändert sich), das es wird ein wenig wärmer und der Sonnenstrahl wird in eine andere Richtung abgelenkt
 
 3. Verfehlung: Der Sonnenstrahl verfehlt die Moleküle und setzt seinen Weg unverändert fort
+
 
 Für das Modell bedeutet das folgendes: Wolken reduzieren die Strahlungsenergie der Sonne, heizen sich dabei allerdings auf.
 Da es nicht zielführend war einzelne Sonnenstrahlen und Wassermoleküle zu simulieren, wurde hier ein qualitativer Ansatz gewählt. Es wird nur beachtet, ob Wolken vorhanden sind oder nicht. Sind Wolken vorhanden gibt des zwei Parameter: Absorption und Reflektion. Trifft das Sonnenlicht auf eine Wolkenschicht, so wird der Anteil der Absorption und Reflektion abgezogen. Die übriggebliebene Energie wandert weiter nach unten wo sie entweder auf weitere Wolken oder den Boden trifft. Der Anteil der Absorption wird in Wärmeenergie umgerechnet, resultiert also in einem Temperaturanstieg.
@@ -33,7 +34,7 @@ $$E_{Sonne}^* = E_{Sonne} * r$$
 ##Luftfeuchtigkeit
 Luftfeuchtigkeit $$h$$ ist der Gehalt der Luft an Wasserdampf. Die Luftfeuchtigkeit kann auf verschiedene Weisen bestimmt werden. Eine (die im Modell verwendete) ist das Verhältnis der Zahlen $$m$$ von Wasser- zu Luftmoleküle:
 $$h = 100\frac{m_{Wasser}}{m_{Luft}}$$
-Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das überwinden der Oberflächenspannung entzieht der Umgebung Energie, die sich dadurch abkühlt. [6]
+Die Luftfeuchtigkeit steigt durch Verdunstung. Verdunstung ist, wenn Wassermoleküle die Oberflächenspannung überwinden und sich mit der darüber liegenden Luft vermischen. Das überwinden der Oberflächenspannung entzieht der Umgebung Energie, die sich dadurch abkühlt. [6, S. 42]
 ![Ein Wassermolekül durchbricht die Wasseroberfläche. Luftfeuchtigkeit steigt, Temperatur sinkt.](verdunstung.PNG)
 
 Die Umkehr zur Verdunstung ist Kondensation. Kondensation erhöht die Umgebungstemperatur, es bilden sich Wassertropfen in der Luft, die zu Boden fallen. Man spricht hierbei von Regen.
@@ -41,11 +42,51 @@ Im Modell wird Regen und Verdunstung sehr einfach dargestellt. Es wird eine Gren
 Solange gilt $$ h<x $$: <br/>Temperatur wird um einen festen Parameter verringert, Luftfeuchtigkeit erhöht.
 Wenn $$ h>=x $$:<br/>Die Temperatur wird um einen festen Parameter erhöht und die Luftfeuchtigkeit verringert. Es regnet.
 
-Aus der Luftfeuchtigkeit resultieren Wolken. Wolken können entweder aus übersättigter Luft bestehen ($$ h > 100 \% $$) oder aus Eiskristallen ($$T<0^\circ und\ h>0 \% $$). Wolken die sich am Boden befinden nennt man Nebel. [6]
+Aus der Luftfeuchtigkeit resultieren Wolken. Wolken können entweder aus übersättigter Luft bestehen ($$ h > 100 \% $$) oder aus Eiskristallen ($$T<0^\circ und\ h>0 \% $$). Wolken die sich am Boden befinden nennt man Nebel. [6, S. 44 ff]
 
 
-##Luftdruck und Windgeschwindigkeit
+##Luftdruck und Wind
+Wind ist bewegte Luft. Luft wird dann bewegt, wenn es einen Luftdruckunterschied auszugleichen gilt. Luftdruck verändert sich durch Erwärmung. Erwärmte Luft steigt nach oben, der Luftdruck an der Erdoberfläche sinkt, es entsteht ein Tiefdruckgebiet.
+An anderen Stellen, z. B. über Wasser, ist die Temperatur an der Oberfläche niedrig. Die Luft ist kühl und sinkt Richtung Erdboden. Der Luftdruck an der Oberfläche steigt. Es entsteht ein Hochdruckgebiet.
+Da in der Natur alles dem Ausgleich zustrebt, fließt Luft vom Hochdruckgebiet zum Tiefdruckgebiet. Es weht Wind. [6, S. 50 ff]
 
 ![](luftdruck.PNG)
+
+Im Modell wurde festgelegt, dass Wind nur von rechts nach links wehen kann. Wind weht damit nur dann zwischen zwei Biomen, wenn der Luftdruck im rechten Biom geringer ist als im linken. 
+Der Luftdruck wird aus dem Temperaturunterschied ermittelt.
+Es gilt die Annahme, dass beide Biome dasselbe konstante Volumen haben, dadurch handelt es sich um einen isochoren Vorgang. 
+
+Damit gilt: $$\frac{T}{p} = const$$ wobei $$T$$ die Temperatur und der $$p$$ der Luftdruck ist.
+
+Daraus kann abgeleitet werden:
+
+$$p_1 = \frac{p_2*T_1}{T_2}$$
+
+und
+
+$$p_2 = \frac{p_1*T_2}{T_1}$$
+
+da 
+
+$$\frac{p_2}{p_1} = \frac{T_2}{T_1}$$
+
+außerdem:
+
+$$\Delta p = p_1 - p_2 $$ <br/>
+da der Luftdruck im ersten Biom immer größer ist als zweiten, da sonst kein Wind berechnet werden würde, denn Wind von rechts nach links ist verboten.
+
+damit gilt:
+
+$$\Delta p = p_1 - \frac{p_1*T_2}{T_1}$$
+
+$$\Delta p = \frac{p_1*(T_1 - T_2)}{T_1}$$
+
+Der Luftdruckunterschied ist also abhängig von den Temperaturen in beiden Biomen und dem initialen Luftdruck. Der genaue Betrag von $$\Delta p$$ ist allerdings im Modell nicht relevant, da nur entschieden wird ob Wind weht oder nicht. Deswegen kann $$p_1$$ durch die konstante $$1$$ ersetzt werden. Damit gilt dann:
+
+Wind weht wenn:
+
+$$\frac{T_1 - T_2}{T_1}>0$$
+
+
 
 
