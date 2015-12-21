@@ -84,7 +84,7 @@ $$\Delta p = p_1 - \frac{p_1*T_2}{T_1}$$
 
 $$\Delta p = \frac{p_1*(T_1 - T_2)}{T_1}$$
 
-Der Luftdruckunterschied ist also abhängig von den Temperaturen in beiden Biomen und dem initialen Luftdruck. Der genaue Betrag von $$\Delta p$$ ist allerdings im Modell nicht relevant, da nur entschieden wird ob Wind weht oder nicht. Deswegen kann $$p_1$$ durch die konstante $$1$$ ersetzt werden. Damit gilt dann:
+Der Luftdruckunterschied ist also abhängig von den Temperaturen in beiden Biomen und dem initialen Luftdruck. Der genaue Betrag von $$\Delta p$$ ist allerdings im Modell nicht relevant, da nur entschieden wird, ob Wind weht oder nicht. Deswegen kann $$p_1$$ durch die konstante $$1$$ ersetzt werden. Damit gilt dann:
 
 Wind weht wenn:
 
