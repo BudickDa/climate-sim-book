@@ -1,9 +1,9 @@
 # Das System
 
 Im Folgenden soll das Klima aus systemtheoretischer Sicht betrachtet werden. Dazu müssen vorher einige Begrifflichkeiten geklärt werden:
-* **Knoten:** Jedes System besteht aus Knoten, welche eigenständige Elemente sind und Verbindungen zwischen den Knoten. Das vorliegende System besteht nur aus Subsystemen und Elementen.
-* **Elementen:** Hat Ein- und Ausgänge und interne Logik und Eigenschaften. Im vorliegenden System sind die Höhenlevel die Elemente. Sie interagieren mit der Umwelt und haben eine interne Logik. Man kann hierbei auch von Agenten sprechen.
-* **Subsystem:** Ein Subsystem kann entweder eine Anordnung von Systemen sein (z. B.: Ein Biom (Subsystem) besteht aus drei Leveln (Subsystem)) oder ein System bestehend einzelnen Elementen.
+* **Knoten:** Jedes System besteht aus Knoten, welche eigenständige Elemente sind, und aus Verbindungen zwischen den Knoten. Das vorliegende System besteht nur aus Subsystemen und Elementen.
+* **Element:** Hat Ein- und Ausgänge und interne Logik und Eigenschaften. Im vorliegenden System sind die Höhenlevel die Elemente. Sie interagieren mit der Umwelt und haben eine interne Logik. Man kann hierbei auch von Agenten sprechen.
+* **Subsystem:** Ein Subsystem kann entweder eine Anordnung von Systemen sein (z. B.: Ein Biom (Subsystem) besteht aus drei Leveln (Subsystem)) oder ein System bestehend aus einzelnen Elementen.
 * **Gesamtsystem:** Das Gesamtsystem ist die Summe aller Subsysteme. In diesem Fall alle Biome.
 
 
