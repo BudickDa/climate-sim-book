@@ -35,7 +35,7 @@ Das Resultierende System kann wie folgt abgebildet werden:
 
 Am Anfang steht ein sogenanntes Seed-Biom. Die Eigenschaften dieses Biomes werden am Anfang gesetzt. 
 
-Die Biome selbst haben zwei Eingänge und einen Ausgänge. Der erste Eingang ist für die Aufnahme von Strahlungsenergie (Sonnenschein) zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an. Der Ausgang gibt sie an das nächste Biom weiter.
+Die Biome selbst haben zwei Eingänge und einen Ausgang. Der erste Eingang ist für die Aufnahme von Strahlungsenergie (Sonnenschein) zuständig. Der andere nimmt die durch den Wind herangetragenen Eigenschaften des vorherigen Biomes an. Der Ausgang gibt sie an das nächste Biom weiter.
 
 Die Level jedes Biomes interagieren über den Wind mit dem der Höhe entsprechenden nächstem Biom. Wenn auf der entsprechenden Höhe zwischen zwei Biomen Wind weht, beeinflussen die Eigenschaften des vorherigen Biomes die des nächsten.
 
