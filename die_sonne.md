@@ -1,7 +1,7 @@
 # Die Sonne
 
 Das Wetter eines jeden Planeten ist abhängig vom Zentralgestirn, welches er umkreist. Im Falle der Erde ist das die Sonne. Die Erde umkreist die Sonne annähernd kreisförmig. An der entferntesten Stelle, dem sogenannten Aphel sind das $$152 * 10^9 m$$. Am Perihel, die Position an der die Sonne der Erde am nächsten ist, sind es $$147 * 10^9 m$$.
-Die durchschnittlich wirkende Leistung in Form von Strahlung ist von der Entfernung annähernd unabhängig. Misst man von einem Satelliten die eintreffende Strahlung, erhält man den Durchschnittswert von $$1367 \frac{W}{m^2}$$ (3). 
+Die durchschnittlich wirkende Leistung in Form von Strahlung ist von der Entfernung annähernd unabhängig. Misst man von einem Satelliten die eintreffende Strahlung, erhält man den Durchschnittswert von $$1367 \frac{W}{m^2}$$ [3]. 
 Die unterschiedlichen Klimazonen, sowie der Wechsel der Jahreszeiten, liegt an der Neigung der Äquatorebene zur Bahnebene des Orbits. Diese beträgt etwa $$23.4 ^\circ$$. Man spricht hierbei von der Ekliptik.
 
 ![Ekiptik: Der Winkel zwischen Äquator und Orbitalebene](Ekliptik.png)
