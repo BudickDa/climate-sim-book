@@ -61,6 +61,7 @@ Zum einen ist es **chaotisch**. Ein chaotisches System ist zwar deterministisch,
 
 Desweiteren ist es **nichtlinear**. Nichtlineare Systeme sind dynamischen Systemen konzeptuell ähnlich. Dynamische Systeme sind vergleichbar mit Objekten, deren Status sich über Zeit gemäß dynamischen Regeln entwickelt. Diese Regeln sind deterministische Entwicklungsoperatoren, d. h. Zufall spielt in einem solchen System keine Rolle [3].
 
+<div style="page-break-after: always;"></div>
 ## Abhängigkeiten und Reihenfolge
 Wie im Kapitel [Die Erde](die_erde.md) bereits erörtert wurde, hängen die diverse klimatischen Bedingungen zusammen. 
 Die Bewölkung ist zum Beispiel abhängig von Luftfeuchtigkeit und Temperatur in einer bestimmten Luftschicht. Daraus folgt, dass bevor die Bewölkung ermittelt werden kann, Temperatur und Luftdruck ermittelt werden müssen. 
