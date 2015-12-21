@@ -62,6 +62,8 @@ Um zu ermitteln ob es bewölkt ist, wird die aktuelle Temperatur und Luftfeuchti
       data.temperature -= _t2h;
       data.humidity += _t2h;
     }
+
+
     
     /*
      * Ob das Biom bewölkt ist wird anhand der Luftfeuchtigkeit 
